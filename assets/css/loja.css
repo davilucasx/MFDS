@@ -49,12 +49,12 @@ a{
 
 .box{
     display: flex;
-   
-    
 }
 
 .txt i{
     font-size: 25px;
+    background: transparent;
+    border: none;
     
 }
 
@@ -65,19 +65,31 @@ a{
 }
 
 .pesquisa{
-    width: 1000px;
+    width: 800px;
     height: 40px;
     border-radius: 10px;
     border: none;
 }
 
+.pesquisa:focus-visible{
+    outline: none;
+}
+
 .box input::placeholder{
     color: rgb(0, 0, 0);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300px;
 }
 
-.navbar{
+.nav li a{
+    color: #fff;
+}
+
+.nav li a:hover{
+    color: #90D5B4;
+}
+
+.bar{
     width: 100%;
     height: 45px;
     background-color: #000000;
@@ -87,9 +99,54 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-li{
+li a{
     color: #90D5B4;
-    padding: 15px;
+    padding: 10px;
+}
+li a:hover{
+    color: #fff;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+.all-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product{
+    overflow: hidden;
+    background-color: #1D5E69;
+    color: #90D5B4;
+    font-weight: 200px;
+    text-align: center;
+    width: 250px;
+    height: 380px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin: 2rem;
+}
+
+.product a{
+    border: solid 2px #fff;
+}
+.product a:hover{
+    color: #7cbc9a;
 }
